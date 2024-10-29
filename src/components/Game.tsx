@@ -1,8 +1,4 @@
-// The entire content of the provided game component goes here
-// (The code is too long to paste in full, but it would be the exact same as the attachment)
-
-export default function Game() {
-  "use client"
+"use client"
 
 import * as React from 'react'
 import { useState, useCallback, useEffect, useMemo, useRef } from 'react'
@@ -1709,5 +1705,4 @@ export default function Game() {
     </div>
     </React.Fragment>
   );
-}
 }
