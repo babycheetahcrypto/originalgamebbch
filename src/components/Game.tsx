@@ -16,7 +16,13 @@ import Image from 'next/image'
 // Remove or comment out this line
 // const { theme, setTheme } = useTheme()
 
-// Mocked TelegramWebApp API
+declare global {
+  interface Window {
+    Telegram: any;
+  }
+}
+
+const TelegramWebApp = window.Telegram.WebApp;
 const TelegramWebApp = {
   initData: "user_id=12345&username=CryptoEnthusiast",
   sendData: (data: any) => console.log("Sending data to Telegram:", data),
